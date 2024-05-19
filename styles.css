@@ -282,7 +282,7 @@ footer p {
 /* Hero section CSS */
 
 .hero {
-  background-image: url("/Images/background-image.jpg"); /* Replace '/path/to/your/background-image.jpg' with the path to your background image */
+  background-image: url("/Winex-images/background-image.jpg"); /* Replace '/path/to/your/background-image.jpg' with the path to your background image */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; /* Change to "cover" */
