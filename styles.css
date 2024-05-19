@@ -1110,7 +1110,6 @@ footer p {
 }
 /* General styling for the carousel buttons */
 .slick-arrow {
-  background-color: #eebd46; /* Background color of the buttons */
   color: black; /* Text color of the buttons */
   border: none; /* Remove default border */
   border-radius: 50%; /* Make the buttons round */
