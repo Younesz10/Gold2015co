@@ -27,6 +27,9 @@
     />
   </head>
   <body>
+    <div class="announcement-bar">
+      <p>Need Help? Call Us <a href="tel:+9647733777064">+9647503181817</a></p>
+    </div>
 
     <!-- Navbar Section -->
     <nav class="navbar">
@@ -46,6 +49,9 @@
         <ul class="navbar__menu">
           <li class="navbar__item">
             <a href="/" class="navbar__links">HOME</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/winex.html" class="navbar__links">WINEX</a>
           </li>
           <li class="navbar__item">
             <a href="/brands.html" class="navbar__links">BRANDS</a>
@@ -86,9 +92,6 @@
         <img src="/Winex-images/6.jpg" alt="Capstone Project" />
         <img src="/Winex-images/7.jpg" alt="Capstone Project" />
         <img src="/Winex-images/8.jpg" alt="Capstone Project" />
-        <img src="/Winex-images/2.jpg" alt="Capstone Project" />
-        <img src="/Winex-images/3.jpg" alt="Capstone Project" />
-
 
       </div>
         <button id="prevBtn">&#10094;</button>
@@ -143,11 +146,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12 titleHero">
-            <span>Winex Products</span>
+            <span>Winex</span>
           </div>
           <div class="col-12 productList">
-            <button class="slick-prev custom-prev" aria-label="Previous" type="button">&larr;</button>
-            <div class="slickProduct productStyle">
+            <button id="prevBtn1" class="slick-prev custom-prev" aria-label="Previous" type="button">&larr;</button>
+            <div id="carousel1" class="slickProduct productStyle">
               <!-- Product Items -->
               <div class="product-item">
                 <div class="product_image">
@@ -430,7 +433,7 @@
               </div>
               <!-- Repeat similar blocks for other products -->
             </div>
-            <button class="slick-next custom-next" aria-label="Next" type="button">	&rarr;</button>
+            <button id="nextBtn1" class="slick-next custom-next" aria-label="Next" type="button">	&rarr;</button>
           </div>
         </div>
       </div>
@@ -441,11 +444,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12 titleHero">
-            <span>Puffy Products</span>
+            <span>Puffy</span>
           </div>
           <div class="col-12 productList">
-            <button class="slick-prev custom-prev" aria-label="Previous" type="button">	&larr;</button>
-            <div class="slickProduct productStyle">
+            <button id="prevBtn2" class="slick-prev custom-prev" aria-label="Previous" type="button">	&larr;</button>
+            <div id="carousel2" class="slickProduct productStyle">
               <!-- Product Items -->
               <div class="product-item">
                 <div class="product_image">
@@ -692,21 +695,13 @@
               </div>
               <!-- Repeat similar blocks for other products -->
             </div>
-            <button class="slick-next custom-next" aria-label="Next" type="button">	&rarr;</button>
+            <button id="nextBtn2" class="slick-next custom-next" aria-label="Next" type="button">	&rarr;</button>
           </div>
         </div>
       </div>
     </section>
     
-    <hr class="section-divider" />
-    <div class="image_carousel">
-      <h1 style="font-size: 50px;">Our Partner</h1>
-      <div class="carousel">
-        <img src="/Winex-images/2.jpg" alt="Capstone Project" />
-        <img src="/Winex-images/3.jpg" alt="Capstone Project" />
-      </div>
-      </div>
-    </div>
+
     <hr class="section-divider" />
 
     <div class="benefits">
@@ -743,31 +738,46 @@
         </div>
       </div>
     </div>
+    <hr class="section-divider" />
+
+
+    <div class="location">
+      <div class="location_container">
+        <h1>Our Location</h1>
+        <h3>Address: Iraq, Zakho Commercial Complex - Third Branch, Office No. 89</h3>
+        <h3>عنوان: العراق _زاخو_ مجمع تجاري /الفرع الثالث رقم الشركة 89 </h3>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1193.7009011085854!2d42.64312531483931!3d37.13960417899367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400919655d146f1f%3A0x6feb7420e7961fff!2sGOLD%202015!5e0!3m2!1sen!2sus!4v1716427033884!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      </div>
+
+    </div>
+    <hr class="section-divider" />
 
 
     <script src="script.js"></script>
   </body>
 
   <footer>
-    <!-- <div class="socials">
+    <div class="socials">
       <div class="socials_container">
-        <p>FOLLOW US</p>
-        <div class="socials_content">
+        <h3>Telephone: <a href="tel:+9647733777064" class="fa fa-phone"> +9647503181817</a>
+        </h3>
+        <br />
+        <h3>Email:<a href="mailto:gold2015_co@outlook.sa">gold2015_co@outlook.sa</a>
+        </h3>
+        <div class="socials_content">     
           <a
-            href="https://www.facebook.com/flonaoffice/"
+            href="https://www.facebook.com/profile.php?id=100066876998808"
             alt="Flona Facebook"
             target="_blank"
             ><img src="/images/facebook_icon.png" alt="facebook"
           /></a>
-          <a
-            href="https://www.instagram.com/flonacompany/"
-            alt="Flona instagram"
-            target="_blank"
-            ><img src="/images/instagram_icon.png" alt="instagram"
-          /></a>
         </div>
       </div>
-    </div> -->
-    <p>&copy; 2024 Gold 2015 Co. All rights reserved.</p>
+
+      <p>&copy; 2024 Gold 2015 Co. All rights reserved.</p>
+
+    </div>
   </footer>
 </html>

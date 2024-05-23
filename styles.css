@@ -17,6 +17,21 @@
   justify-content: center;
   z-index: 999;
 }
+
+/* Style for the announcement bar */
+.announcement-bar {
+  background-color: black;
+  padding: 10px 20px; /* Add padding to the announcement bar */
+  text-align: center; /* Center align text */
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+
+.announcement-bar a,
+p {
+  color: white;
+}
 .navbar {
   background-color: #eebd46;
   height: 60px;
@@ -28,6 +43,7 @@
   position: sticky;
   z-index: 998;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  top: 38px;
 }
 
 .navbar__container {
@@ -39,6 +55,7 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
+  position: sticky;
 
   /*box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/
 }
@@ -108,6 +125,7 @@
 .call-button a:hover {
   text-decoration: none;
   cursor: pointer;
+  color: white;
 }
 
 /* .call-button2 {
@@ -248,20 +266,28 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  text-align: center;
+}
+.socials_container a {
+  color: black;
+  margin: 10px;
+}
+
+.socials_container p {
+  text-align: center;
 }
 
 .socials_content {
   display: inline-block;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  text-align: center;
+  color: black;
 }
 
 .socials_content img {
   width: 40px;
   height: 40px;
-  margin-left: 10px;
 }
 
 @media screen and (max-width: 765px) {
@@ -522,7 +548,7 @@ footer p {
   align-items: center;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .brands_card {
@@ -565,15 +591,13 @@ footer p {
 
 .brands_container h1 {
   font-size: 50px;
-  margin-top: 50px;
   text-align: center;
   color: #eebd46;
-  margin: 0;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .brands_content img {
-  width: 250px;
+  width: 300px;
   height: auto;
 }
 
@@ -666,6 +690,10 @@ footer p {
   background-color: #eebd46;
 }
 
+.benefits_info p {
+  color: black;
+}
+
 @media screen and (max-width: 960px) {
   .benefits {
     display: grid;
@@ -736,16 +764,24 @@ footer p {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 0px;
+  height: 925px; /* Reduced height */
+  display: flex;
+  justify-content: center; /* Horizontally centers the image */
+  align-items: center; /* Vertically centers the image */
+  padding: 25px;
 }
 
 .carousel {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .carousel img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures the image scales down to fit within the container */
 }
 
 .image_carousel h1 {
@@ -844,6 +880,10 @@ footer p {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.about_card p {
+  color: black;
 }
 
 @media screen and (max-width: 960px) {
@@ -1061,6 +1101,15 @@ footer p {
 
 .section4 {
   padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .titleHero {
@@ -1081,6 +1130,7 @@ footer p {
 }
 
 .product-item {
+  display: flex;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -1101,12 +1151,12 @@ footer p {
 
 .slickProduct {
   display: flex;
+
   overflow: hidden;
 }
 
 .slickProduct .product-item {
-  flex: 0 0 auto;
-  margin: 0 5px; /* Adjust the margin as needed */
+  flex: 0 0;
 }
 /* General styling for the carousel buttons */
 .slick-arrow {
@@ -1160,4 +1210,60 @@ footer p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+iframe {
+  width: 1200px;
+  height: 600px;
+  border: 0;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.location_container h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #eebd46;
+  text-shadow: 1px 1px 1px rgba(35, 20, 20, 0.3);
+}
+.location_container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  iframe {
+    width: 350px;
+    height: 350px;
+  }
+
+  .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .location_container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #eebd46;
+    text-shadow: 1px 1px 1px rgba(35, 20, 20, 0.3);
+  }
+  .location_container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 10px;
+  }
 }
